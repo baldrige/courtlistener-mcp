@@ -183,7 +183,7 @@ class CourtListenerClient:
 
         # Extract text
         text = ""
-        for field in ["plain_text", "html_with_citations", "html", "html_lawbox"]:
+        for field in ["html_with_citations", "html", "html_lawbox", "plain_text"]:
             if data.get(field):
                 text = data[field]
                 if field.startswith("html"):
