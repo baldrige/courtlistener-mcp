@@ -5,7 +5,8 @@ An MCP (Model Context Protocol) server for searching court opinions and legal ci
 ## Installation
 
 ```bash
-cd ~/Research/courtlistener-mcp
+git clone https://github.com/baldrige/courtlistener-mcp.git
+cd courtlistener-mcp
 pip install -e .
 ```
 
@@ -29,7 +30,7 @@ Add to `~/.claude/settings.json`:
     "courtlistener": {
       "command": "python",
       "args": ["-m", "courtlistener_mcp.server"],
-      "cwd": "/Users/49753464/Research/courtlistener-mcp",
+      "cwd": "/path/to/courtlistener-mcp",
       "env": {
         "COURTLISTENER_API_TOKEN": "your-token-here"
       }
