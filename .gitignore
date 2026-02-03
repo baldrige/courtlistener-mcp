@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Environment
+.env
+*.env
+
+# Opinion browser data files (large/generated)
+opinion_browser/*.pdf
+opinion_browser/opinions.json
+opinion_browser/cases.log
+
+# IDE
+.idea/
+.vscode/
+*.swp

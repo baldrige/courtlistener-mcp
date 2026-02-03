@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "courtlistener-mcp"
+version = "0.1.0"
+description = "MCP server for CourtListener case law research"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.25.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+courtlistener-mcp = "courtlistener_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/courtlistener_mcp"]
